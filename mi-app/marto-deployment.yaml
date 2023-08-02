@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: martooo
+  labels:
+    app: marto
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: marto
+  template:
+    metadata:
+      labels:
+        app: marto
+    spec:
+      containers:
+      - name: marto
+        image: martooo/marto-app:35
+        ports:
+        - containerPort: 80
+
