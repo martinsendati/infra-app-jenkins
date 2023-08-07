@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: marto
-        image: martooo/marto-app:37
+        image: martooo/marto-app:44
         ports:
         - containerPort: 80
 
